@@ -34,3 +34,9 @@ This document summarizes the key artifacts and skills demonstrated during the fi
 ### GNS3 Network Simulation
 - **Artifact:** [GNS3 Troubleshooting & Resolution Report](https://github.com/RezaAramjou/labs/blob/main/gns3/day-06-troubleshooting-report.md)
 - **Description:** This report documents a deep-dive troubleshooting session that arose while attempting to set up a GNS3 routing lab. The process involved diagnosing and resolving **host-level package management conflicts (`dkms`)**, a cascade of **GNS3-VirtualBox integration bugs**, and flaws in the **GNS3 GUI**. The exercise demonstrates advanced diagnostic skills, persistence, and the ability to pivot to a more stable architectural solution (the **GNS3 VM**).
+
+## 1. Direct Links to Raw Artifacts
+To meet the project deliverables, here are the direct links to the raw evidence files generated this week:
+
+- Packet Capture File: [week1-http.pcap](https://github.com/RezaAramjou/labs/blob/main/pcaps/week1-http.pcap)
+- Virtual Machine Log: [snapshots_meta.md](https://github.com/RezaAramjou/labs/blob/main/virtualbox/snapshots_meta.md)
