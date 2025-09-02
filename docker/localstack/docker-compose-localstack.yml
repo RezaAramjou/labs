@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  localstack:
+    container_name: "localstack_main"
+    image: "localstack/localstack:latest"
+    ports:
+      # Port for the main LocalStack gateway
+      - "4566:4566"
+      # Port range for individual AWS services
+      - "4510-4559:4510-4559"
+    environment:
+      # Specifies which services to start to save resources.
+      # We need EC2 (for VPCs/instances) and S3 (for the future state backend).
+      - SERVICES=ec2,s3
+    volumes:
+      # Mounts a volume to persist LocalStack data between restarts.
+      - "localstack_data:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+# Defines the named volume for data persistence.
+volumes:
+  localstack_data:
